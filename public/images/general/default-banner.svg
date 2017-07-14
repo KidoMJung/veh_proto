@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1903" height="432" viewBox="0 0 1903 432">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0.85;
+      }
+
+      .cls-2 {
+        fill: url(#Naamloos_verloop_18);
+      }
+    </style>
+    <linearGradient id="Naamloos_verloop_18" data-name="Naamloos verloop 18" x1="897.36" y1="479.66" x2="816.97" y2="258.79" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ed1c24" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <title>Tekengebied 1 kopie</title>
+  <g id="Laag_3" data-name="Laag 3">
+    <polygon class="cls-1" points="745 431.45 0 431.45 0 0 712 0 801.48 267.06 745 431.45"/>
+    <polygon class="cls-2" points="800.69 264.72 801.48 267.06 745 431.45 730.17 431.45 730 432 1029.82 431.45 800.69 264.72"/>
+  </g>
+</svg>

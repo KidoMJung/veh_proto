@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'VEH-copy';
+  src: url('VEH-copy.eot');
+  src: url('VEH-copy.woff2') format('woff2'),
+       url('VEH-copy.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VEH';
+  src: url('VEH.woff') format('woff'),
+       url('VEH.ttf') format('truetype'),
+       url('VEH.svg#VEH') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
