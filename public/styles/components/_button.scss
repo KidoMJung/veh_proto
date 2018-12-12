@@ -1,0 +1,140 @@
+.button {
+  color: #FFFFFF;
+  background-color: #f1840b;
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  //-webkit-transition: all .7s ease;
+  //-moz-transition: all .7s ease;
+  //-ms-transition: all .7s ease;
+  //-o-transition: all .7s ease;
+  //transition: all .7s ease;
+}
+
+// Button Navbar
+.button-navbar {
+  background-color: #FFFFFF !important;
+
+  @media only screen and (max-width: 767px) {
+	position: fixed;
+	right: 20px;
+	top: 2px;
+  }
+  @media only screen and (max-width: 575px) {
+	right: 10px;
+	top: 8px;
+  }
+}
+.button-navbar.active .top {
+  -webkit-transform: translateY(15px) rotateZ(45deg);
+  -moz-transform: translateY(15px) rotateZ(45deg);
+  -ms-transform: translateY(15px) rotateZ(45deg);
+  -o-transform: translateY(15px) rotateZ(45deg);
+  transform: translateY(15px) rotateZ(45deg);
+}
+.button-navbar.active .middle {
+  width: 0;
+}
+.button-navbar.active .bottom {
+  -webkit-transform: translateY(-15px) rotateZ(-45deg);
+  -moz-transform: translateY(-15px) rotateZ(-45deg);
+  -ms-transform: translateY(-15px) rotateZ(-45deg);
+  -o-transform: translateY(-15px) rotateZ(-45deg);
+  transform: translateY(-15px) rotateZ(-45deg);
+}
+
+// Button Hero
+.button-hero {
+  width: 63%;
+  height: 50px;
+
+  @media only screen and (max-width: 767px) {
+	width: 100%!important;
+  }
+  @media only screen and (max-width: 1199px) {
+	width: 75%
+  }
+  @media screen and (min-width: 1200px) {
+	width: 100%;
+  }
+}
+
+.button-alwaysPrepared {
+  width: 63%;
+  height: 50px;
+  margin-top: 8px;
+
+  @media only screen and (max-width: 767px) {
+	margin-bottom: 45px;
+  }
+  @media only screen and (max-width: 767px) {
+	width: 100%!important;
+  }
+  @media only screen and (max-width: 1199px) {
+	width: 75%
+  }
+  @media screen and (min-width: 1200px) {
+	width: 100%;
+  }
+}
+
+.button-hypotheekadvies {
+  padding: 15px 120px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  
+  @media only screen and (max-width: 350px) {
+	padding: 15px 100px;
+  }
+  @media only screen and (max-width: 300px) {
+	padding: 15px 80px;
+  }
+}
+
+//.button-hypotheekadvies {
+//  width: 63%;
+//  height: 50px;
+//  margin-top: 45px;
+//  position: absolute;
+//  left: 19%;
+//  
+//  @media only screen and (max-width: 1199px) {  
+//	left: 26%;
+//	width: 50%;
+//  }
+//}
+
+
+// Button Signup
+.btn:hover {
+  background: #E4E4E2;
+}
+
+.button-signup {
+  padding: 10px 20px;
+  left: 32px;
+  position: absolute;
+  bottom: 26px;
+  background: #f1840b;
+  color: #FFF;
+}
+
+.button-signup:hover {
+  color:#FFF;
+  background: #f1840b;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}

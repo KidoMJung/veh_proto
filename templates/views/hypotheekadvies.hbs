@@ -1,0 +1,424 @@
+<main class="container-fluid hypotheekadvies">
+
+	<!-- Navigation Bar -->
+	<section class="row">
+		<header class="container">
+			<div role="navigation" class="navbar navbar-default" style="border: 1px solid #e4e2e2; border-radius: 1px;">
+				<div class="navbar-header">
+					<a href="/" class="navbar-brand navbar-brand-EH">
+						<img src="/images/LOGO-VEH-StaSterker.svg" class="logo-VEH" alt="VEH" title="VEH">
+					</a>
+					<div class="nav-right hidden-xs">
+						<a href="#login-box" class="profile-user login-window" target="blank">
+							<i class="fa fa-user"></i>
+						</a>
+						<div class="button button-navbar" id="btn">
+							<div class="bar top"></div>
+							<div class="bar middle"></div>
+							<div class="bar bottom"></div>
+						</div>
+					</div>
+					<div class="nav-right visible-xs">
+						<a href="/" class="profile-user" target="blank">
+							<i class="fa fa-user"></i>
+						</a>
+						<div class="button button-navbar" id="btn">
+							<div class="bar top"></div>
+							<div class="bar middle"></div>
+							<div class="bar bottom"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</section>
+	<!-- Navigation Bar ENDS-->
+	
+	<!-- Persoonlijke Informatie -->
+	<section class="row persoonlijke-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 class="persoonlijke-info__header">
+						Persoonlijke Informatie
+					</h1>
+				</div>
+				<!-- bar moet hier komen -->
+				<div class="col-xs-12 col-sm-8">
+					
+					<p>
+						We willen u een onafhankelijk hypotheekadvies geven gebaseerd op uw woonwensen.
+						Hiervoor hebben we een aantal gegevens van u nodig.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Persoonlijke Informatie ENDS -->
+
+	<!-- Persoonlijke Informatie -->
+	<section class="row">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h4 class="persoonlijke-gegevens__title">
+						Persoonlijke gegevens
+					</h4>
+				</div>
+					<form id="persoonlijke-gegevens">
+
+						<div class="col-xs-12 col-sm-5">
+							<div class="form-group">
+								<label for="voornaam">Voornaam *</label>
+								<input type="text" name="voornaam" id="voornaam" minlength="2" placeholder="Uw Voornaam" required>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-5">
+							<div class="form-group">
+								<input type="text" name="tussenvoegsel" id="tussenvoegsel" minlength="2" class="tussenvoegsel" placeholder="Tussenvoegsel" style="width: 40%; margin-top: 41px;">
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-5">
+							<div class="form-group">
+								<label for="achternaam">Achternnaam *</label>
+								<input type="text" name="achternaam" id="achternaam" minlength="2" placeholder="Uw Achternaam" required>
+							</div>
+						</div>
+						
+						<div class="col-xs-12 col-sm-5">
+							<div class="form-group">
+								<input type="text" name="lidnummer" placeholder="Lidnummer" class="lidnummer" style="margin-top: 41px">
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-5">
+							<div class="form-group">
+								<label for="geboortedatum">Geboortedatum *</label>
+								<input type="text" name="geboortedatum" id="geboortedatum" minlength="8" placeholder="Uw Geboortedatum" required>
+								<span class="icon">
+									<i class="fa fa-calendar"></i>
+								</span>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-5">
+							<div class="form-group">
+								<label for="burgerlijkeStaat">Bugerlijke staat *</label>
+								<input type="text" name="burgerlijkseStaat" id="burgerlijkeStaat" required>
+								<span class="icon">
+									<i class="fa fa-caret-down"></i>
+								</span>
+							</div>
+							<!--<select class="form-control">-->
+								<!--<option>1</option>-->
+								<!--<option>2</option>-->
+								<!--<option>3</option>-->
+								<!--<option>4</option>-->
+								<!--<option>5</option>-->
+							<!--</select>-->
+						</div>
+						
+						<!-- Geslacht -->
+						<div class="col-xs-12">
+							<ul>
+								<li class="checkbox-geslacht">
+									<input type="radio" id="man"  name="checkbox-geslacht" class="geslacht" style="width: 2%">
+									<label for="man" class="geslacht"  style="margin-top: 16px">
+										<span class="check"></span>Man
+									</label>
+								</li>
+								<li class="checkbox-geslacht">
+									<input type="radio" id="vrouw"  name="checkbox-geslacht" class="geslacht" style="width: 2%">
+									<label for="vrouw" class="geslacht"  style="margin-top: 16px">
+										<span class="check"></span>Vrouw
+									</label>
+								</li>
+							</ul>
+						</div>
+					</form>
+			</div>
+		</div>
+	</section>
+
+	 <!-- Persoonlijke Contactgegevens -->
+	<section class="row">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h4 class="persoonlijke-contact-gegevens__title">
+						Contactgegevens
+					</h4>
+				</div>
+					<form id="contact-gegevens">
+						
+							<div class="col-xs-12 col-sm-5">
+								<div class="form-group">
+									<label for="adres">Adres *</label>
+									<input type="text" name="adres" id="adres" minlength="2" placeholder="Straatnaam" required>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-sm-5">
+								<div class="form-group">
+									<label for="huisnummer" style="display: block">Huisnummer *</label>
+									<input type="number" name="huisnummer" id="huisnummer" minlength="1" placeholder="123" style="width: 40%; margin-right: 8%;">
+									<input type="text" name="toevoeging" placeholder="Toevoeging" style="width: 40%">
+								</div>
+							</div>
+						
+							<div class="col-xs-12 col-sm-5">
+								<div class="form-group">
+									<label for="postcode">Postcode *</label>
+									<input type="number text" name="postcode" id="postcode" minlength="6" placeholder="1234AB" required>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-sm-5">
+								<div class="form-group">
+									<label for="woonplaats" style="margin-top: 10px;">Woonplaats *</label>
+									<input type="text" name="woonplaats" placeholder="Uw Woonplaats">
+								</div>
+							</div>
+	
+							<div class="col-xs-12 col-sm-5">
+								<div class="form-group">
+									<label for="email">Uw e-mailadres *</label>
+									<input type="text" name="email" id="email" minlength="2" placeholder="123@2sqrs.com" required>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-sm-5">
+								<div class="form-group">
+									<label for="telefoonnr">Telefoonnummer *</label>
+									<input type="text" name="telefoonnr" id="telefoonnr" placeholder="0612345678" required>
+								</div>
+							</div>
+						
+						<!-- Situatie Partner -->
+						<div class="col-xs-12">
+							<ul>
+								<li>
+									<input type="radio" id="koop-met-partner"  name="situatie-partner" class="checkbox-situatie-partner" style="width: 2%">
+									<label for="koop-met-partner" class="koop-met-partner" style="margin-top: 16px">
+										<span class="check"></span>Ik koop de woning met mijn partner
+									</label>
+								</li>
+							
+						
+								<li>
+									<input type="radio" id="partner-zelfde-adres" name="situatie-partner" class="checkbox-situatie-partner"  style="width: 2%">
+									<label for="partner-zelfde-adres" class="partner-zelfde-adres" style="margin-top: 16px">
+										<span class="check"></span>Mijn Partner woont op hetzelfde adres
+									</label>
+								</li>
+							</ul>
+								
+							<!-- Email van partner -->
+							<input type="text" name="email-partner" minlength="2" placeholder="E-mailadres van uw partner" style="margin-top: 20px">
+							
+							<!-- Situatie Werk -->
+							<h4 class="situatie" style="margin-bottom: 10px; margin-top: 43px;">
+								Situatie
+							</h4>
+
+							<ul>
+								<li>
+									<input type="radio" id="loondienst"  name="situatie-werk" class="checkbox-situatie-werk" style="width: 2%">
+									<label for="loondienst" class="situatie-werk" style="margin-top: 16px">
+										<span class="check"></span>Loondienst
+									</label>
+									
+								</li>
+								<li>
+									<input type="radio" id="ondernemer"  name="situatie-werk" class="checkbox-situatie-werk" style="width: 2%">
+									<label for="ondernemer" class="situatie-werk" style="margin-top: 16px">
+										<span class="check"></span>Ondernemer
+									</label>
+								
+								</li>
+								<li>
+									<input type="radio" id="gepensioneerd"  name="situatie-werk" class="checkbox-situatie-werk" style="width: 2%">
+									<label for="gepensioneerd" class="situatie-werk" style="margin-top: 16px">
+										<span class="check"></span>Gepensioneerd
+									</label>
+									
+								</li>
+								<li>
+									<input type="radio" id="andersNamelijk"  name="situatie-werk" class="checkbox-situatie-werk" style="width: 2%">
+									<label for="andersNamelijk" class="situatie-werk" style="margin-top: 16px">
+										<span class="check"></span>Anders, namelijk
+									</label>
+									
+								</li>
+								<input type="text" name="name-andersNamelijk" minlength="2" style="margin-top: 10px">
+							</ul>
+							<!-- Situatie Werk ENDS -->
+						</div>
+					</form>
+			</div>
+		</div>
+	</section>
+	<!-- Persoonlijke Contactgegevens ENDS -->
+
+	<section class="row">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" class="button button-hypotheekadvies" style="margin-top: 60px; margin-bottom: 150px;">
+						Volgende
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+
+	<!--<section class="row hyphotheekadvies">-->
+		<!--<div class="container">-->
+			<!--<div class="row">-->
+				<!--<div class="col-xs-12 col-sm-4">-->
+					<!--<h1>Contact Us</h1>-->
+					<!--{{#if enquirySubmitted}}-->
+						<!--<h3>Thanks for getting in touch.</h3>-->
+					<!--{{else}}-->
+						<!--<form method="post">-->
+							<!--<input type="hidden" name="action" value="contact">-->
+							<!--<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">-->
+								<!--<label>Name</label>-->
+								<!--<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">-->
+							<!--</div>-->
+							<!--<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">-->
+								<!--<label>Email</label>-->
+								<!--<input type="email" name="email" class="form-control" value="{{formData.email}}">-->
+							<!--</div>-->
+							<!--<div class="form-group">-->
+								<!--<label>Phone</label>-->
+								<!--<input type="text" name="phone" placeholder="(optional)" class="form-control" value="{{formData.phone}}">-->
+							<!--</div>-->
+							<!--<div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">-->
+								<!--<label>What are you contacting us about?</label>-->
+								<!--<select name="enquiryType" class="form-control">-->
+									<!--<option value="">(select one)</option>-->
+									<!--{{#each enquiryTypes}}-->
+										<!--<option value="{{value}}">{{label}}</option>-->
+									<!--{{/each}}-->
+								<!--</select>-->
+							<!--</div>-->
+							<!--<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">-->
+								<!--<label>Message</label>-->
+								<!--<textarea name="message" placeholder="Leave us a message..." rows="4" class="form-control">{{formData.message}}</textarea>-->
+							<!--</div>-->
+							<!--<div class="form-actions">-->
+								<!--<button type="submit" class="btn btn-primary">Send</button>-->
+							<!--</div>-->
+						<!--</form>-->
+					<!--{{/if}}-->
+				<!--</div>-->
+			<!--</div>-->
+			<!--<h1>Contact Us</h1>-->
+		<!--</div>-->
+	<!--</section>-->
+</main>
+
+ <!--Footer -->
+<footer id="footer" class="container-fluid main-footer">
+	<div class="row">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<a href="" target="_blank">Disclaimer en privacystatement</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+ <!--Footer ENDS -->
+
+<!-- Login Modal -->
+<!-- Side Bar -->
+<section class="sidebar">
+	<ul class="sidebar-list">
+		<li class="sidebar-item"><a href="#" class="sidebar-anchor"></a></li>
+		<li class="sidebar-item"><a href="/index" class="sidebar-anchor">Homepage</a></li>
+		<li class="sidebar-item"><a href="#login-box" class="sidebar-anchor login-window">Login</a></li>
+		<li class="sidebar-item"><a href="#" class="sidebar-anchor">Logout</a></li>
+	</ul>
+</section>
+<!-- Side Bar ENDS-->
+
+<!-- Login Popup -->
+<section id="login-box" class="login-popup">
+	<header class="popup-header">
+		<span>
+			<a href="#login-box" class="popup-header__login" id="login-form">
+				Login
+			</a>
+		</span>
+		<span>
+			<a href="#" class="popup-header__signup" id="signup-form">
+				Signup
+			</a>
+		</span>
+		<span class="popup-header__close">
+			<i class="fa fa-times"></i>
+		</span>
+	</header>
+	<div class="popup-body">
+
+		<!-- Login Popup -->
+		<div class="login-user">
+			<form>
+				<label>Email/Username</label>
+				<input type="text"/>
+				<br/>
+				<label>Password</label>
+				<input type="password"/>
+				<br/>
+				<div class="checkbox">
+					<input id="remember" type="checkbox">
+					<label for="remember" class="checkbox-label">Remember Login</label>
+				</div>
+			</form>
+		</div>
+
+		<div class="social_login">
+			<div class="">
+				<a href="#" class="social_box fb">
+					<span class="icon"><i class="fa fa-facebook"></i></span>
+					<span class="icon_title">Connect with Facebook</span>
+				</a>
+				<a href="#" class="social_box google">
+					<span class="icon"><i class="fa fa-google-plus"></i></span>
+					<span class="icon_title">Connect with Google</span>
+				</a>
+			</div>
+		</div>
+
+		<!-- Signup Popup -->
+		<div class="signup-user">
+			<form>
+				<label>Full Name</label>
+				<input type="text"/>
+				<br/>
+				<label>Email Address</label>
+				<input type="email"/>
+				<br/>
+				<label>Password</label>
+				<input type="password"/>
+				<br/>
+				<div class="checkbox">
+					<input id="send_updates" type="checkbox">
+					<label for="send_updates" class="checkbox-label">Send me occasional email updates</label>
+				</div>
+				<a href="#" class="btn button-signup">
+					Sign me up!
+				</a>
+			</form>
+		</div>
+		<!-- Signup Popup ENDS -->
+	</div>
+</section>

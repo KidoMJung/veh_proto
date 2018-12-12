@@ -1,0 +1,15 @@
+.guarantee {
+  margin-bottom: 70px;
+}
+
+.guarantee__block-title {
+  margin-top: 60px;
+  color: #574689;
+}
+
+@media screen and (max-width: 767px) {
+  .guarantee__block-image {
+	margin-top: 100px;
+  }
+}
+

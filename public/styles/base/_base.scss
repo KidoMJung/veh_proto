@@ -27,6 +27,73 @@
 /**
  * Set up a decent box model on the root element
  */
+
+body, 
+html {
+  height: 100%;
+  padding: 0 !important;
+  margin: 0;
+}
+
 html {
   box-sizing: border-box;
 }
+
+body {
+  overflow-x: hidden;
+
+  @media only screen and (max-width: 767px) {
+padding-top: 50px;
+  }
+
+  @media only screen and (min-width: 768px) {
+padding-top: 80px;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+} 
+
+main {
+  background-color: #FFFFFF;
+  z-index: 2;
+  position: relative;
+  //height: 100%;
+  min-height: 100%;
+  -webkit-transition: transform .7s ease-in-out;
+  -moz-transition: transform .7s ease-in-out;
+  -ms-transition: transform .7s ease-in-out;
+  -o-transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+}
+
+footer {
+  //background-color: #FFFFFF;
+  z-index: 2;
+  position: absolute;
+  //bottom: 0;
+  width: 100%;
+  //position: relative;
+  //height: 100%;
+  -webkit-transition: transform .7s ease-in-out;
+  -moz-transition: transform .7s ease-in-out;
+  -ms-transition: transform .7s ease-in-out;
+  -o-transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+}
+
+a {
+  text-decoration: none !important;
+}
+//
+//a:focus {
+//  text-decoration: none !important;
+//  color: #eca351 !important;
+//}
+
+img {
+  width: 100%;
+  height: auto;
+}
+

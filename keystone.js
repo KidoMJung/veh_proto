@@ -13,10 +13,11 @@ var handlebars = require('express-handlebars');
 keystone.init({
 	'name': 'Eigen Huis Prototype',
 	'brand': 'Eigen Huis Prototype',
+	'signin logo': ['../images/LOGO-VEH-StaSterker.svg', 200, 100],
 
 	'sass': 'public',
 	'static': 'public',
-	'favicon': 'public/favicon.ico',
+	'favicon': 'public/LOGO-VEH-StaSterker.ico',
 	'views': 'templates/views',
 	'view engine': '.hbs',
 
@@ -58,7 +59,4 @@ keystone.set('nav', {
 });
 
 // Start Keystone to connect to your database and initialise the web server
-
-
-
 keystone.start();

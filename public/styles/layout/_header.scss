@@ -1,0 +1,324 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+// Navbar General
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0px;
+  z-index: 11;
+  background-color: $normal-white;
+  border-radius: 0px;
+  border: 0px;
+  min-height: 80px;
+  margin: 0px;
+
+  @media only screen and (max-width: 767px) {
+	height: 60px;
+	min-height: 60px;
+  }
+}
+
+.navbar-hypotheek {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0px;
+	z-index: 1;
+	background-color: $normal-white;
+  	border-color: #d4d2d2 !important;
+  	border: 1px solid transparent;
+  	border-radius: 2px;
+	min-height: 80px;
+	margin: 0px;
+
+	@media only screen and (max-width: 767px) {
+	  height: 60px;
+	  min-height: 60px;
+	}
+}
+
+// Logo
+.navbar-brand-EH {
+  color: $normal-red !important;
+  width: 70%;
+  height: 70px;
+  position: relative;
+  left: 50px;
+  padding: 10px 10px;
+
+  @media only screen and (max-width: 767px) {
+	position: absolute;
+	width: 30%;
+	left: 20px;
+	padding: 0px;
+  }
+  @media only screen and (max-width: 575px) {
+	top: 10px;
+  }
+}
+
+.logo-VEH {
+  @media only screen and (max-width: 575px) {
+	left: 10px;
+	position: fixed;
+	width: 130px;
+  }
+}
+
+// Profile User Icon
+.fa {
+  font-size: 1.4em;
+  color: #f1840b;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.fa:hover {
+  
+}
+
+.profile-user {
+  position: fixed;
+  font-size: 4rem;
+  top: 19px;
+  right: 90px;
+
+  @media only screen and (max-width: 767px) {
+	top: 12px;
+  }
+  @media only screen and (max-width: 575px) {
+	font-size: 3rem;
+	right: 50px;
+  }
+  @media only screen and (min-width: 768px) {
+	right: 115px;
+  }
+	
+}
+
+.profile-user:hover .fa {
+  color: #EF8354;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+// Navbar Menu
+.nav-right {
+  position: fixed;
+  right: 40px;
+  top: 10px;
+  @media (min-width: 768px) {
+	position: absolute;
+	display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .visible-xs {
+	display: none;
+  }
+}
+
+.nav-right.visible-xs .active .bar {
+  @media only screen and (max-width: 767px) {
+	background-color: #f1840b !important;
+  }
+}
+
+.bar {
+  display: block;
+  height: 5px;
+  width: 50px;
+  background-color: #f6921e;
+  margin: 10px auto;
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+
+  @media only screen and (max-width: 575px) {
+	margin: 6px auto;
+	width: 30px;
+  }
+  
+}
+.middle {
+  margin: 0 auto;
+}
+
+// Navbar Menu Move to Left
+.move-to-left {
+  -webkit-transform: translateX(-400px);
+  -moz-transform: translateX(-400px);
+  -ms-transform: translateX(-400px);
+  -o-transform: translateX(-400px);
+  transform: translateX(-400px);
+
+  @media screen and (min-width: 200px) and (max-width: 485px) {
+	-webkit-transform: translateX(-200px);
+	-moz-transform: translateX(-200px);
+	-ms-transform: translateX(-200px);
+	-o-transform: translateX(-200px);
+	transform: translatefX(-200px);
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 485px) {
+	-webkit-transform: translateX(-300px);
+	-moz-transform: translateX(-300px);
+	-ms-transform: translateX(-300px);
+	-o-transform: translateX(-300px);
+	transform: translateX(-300px);
+  }
+}
+
+// Navbar Menu Mobile
+.nav-right.visible-xs {
+  z-index: 3;
+}
+.nav-right.visible-xs .active .bar {
+  background-color: #FFF;
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+// Sidebar
+.sidebar {
+  height: 100%;
+  width: 400px;
+  background-color: #f6921e;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  right: 0%;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  -ms-transition: all .7s ease-in-out;
+  -o-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+  //-webkit-transition: transform .7s ease-in-out;
+  //-moz-transition: transform .7s ease-in-out;
+  //-ms-transition: transform .7s ease-in-out;
+  //-o-transition: transform .7s ease-in-out;
+  //transition: transform .7s ease-in-out;
+  
+  @media screen and (min-width: 200px) and (max-width: 485px) {
+	width: 200px;
+  }
+  @media screen and (min-width: 375px) and (max-width: 485px) {
+	width: 300px;
+  }
+}
+
+.sidebar.active {
+  right: 0%;
+}
+
+.sidebar-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  margin-top: 150px;
+  text-align: center;
+}
+.sidebar-anchor {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 7px;
+}
+.sidebar-anchor:before {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  -ms-transition: all .7s ease-in-out;
+  -o-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+.sidebar-anchor:hover:before {
+  width: 100%;
+  color: white;
+}
+
+.sidebar.active .sidebar-list .sidebar-item.active a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
+// Sidebar Animation
+.sidebar-item {
+  margin: 30px 0;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+.sidebar-item:first-child {
+  -webkit-transition: all .7s .2s ease-in-out;
+  -moz-transition: all .7s .2s ease-in-out;
+  -ms-transition: all .7s .2s ease-in-out;
+  -o-transition: all .7s .2s ease-in-out;
+  transition: all .7s .2s ease-in-out;
+}
+
+.sidebar-item:nth-child(2) {
+  -webkit-transition: all .7s .4s ease-in-out;
+  -moz-transition: all .7s .4s ease-in-out;
+  -ms-transition: all .7s .4s ease-in-out;
+  -o-transition: all .7s .4s ease-in-out;
+  transition: all .7s .4s ease-in-out;
+}
+
+.sidebar-item:nth-child(3) {
+  -webkit-transition: all .7s .6s ease-in-out;
+  -moz-transition: all .7s .6s ease-in-out;
+  -ms-transition: all .7s .6s ease-in-out;
+  -o-transition: all .7s .6s ease-in-out;
+  transition: all .7s .6s ease-in-out;
+}
+.sidebar-item:last-child {
+  -webkit-transition: all .7s .8s ease-in-out;
+  -moz-transition: all .7s .8s ease-in-out;
+  -ms-transition: all .7s .8s ease-in-out;
+  -o-transition: all .7s .8s ease-in-out;
+  transition: all .7s .6s ease-in-out;
+}
+.sidebar-item.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}

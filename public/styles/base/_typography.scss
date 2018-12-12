@@ -1,0 +1,65 @@
+/**
+ * Basic typography style for copy text
+ */
+
+body {
+  line-height: 26px;
+  font-family: 'MuseoSans-500', 'MuseoSans-300', 'normal', 'Arial';
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+h1 {
+  font-family: 'VEH', 'MuseoSans-500', 'MuseoSans-300';
+  font-size: 60px;
+  
+  @media screen and (max-width: 769px) {
+	font-size: 34px;
+	line-height: 38px;
+  }
+}
+
+h2 {
+  font-family: 'MuseoSans-500';
+  color: #574689;
+  font-size: 30px;
+}
+
+h3 {
+
+}
+
+h4 {
+  color: #574689;
+  font-size: 20px;
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+  margin-top: 10px;
+  color: #615353
+}
+
+p, button, span, a, strong {
+  font-size: 1.5rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #eca351
+}

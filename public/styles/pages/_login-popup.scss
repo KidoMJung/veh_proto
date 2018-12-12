@@ -1,0 +1,259 @@
+/* Mask for background, by default is not display */
+#mask {
+  display: none;
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 999;
+}
+
+/* You can customize to your needs  */
+.login-popup {
+  width: 400px;
+  height: 500px;
+  display: none;
+  background: #FFFFFF;
+  border: 2px solid #ddd;
+  float: left;
+  font-size: 1.2em;
+  //position: fixed;
+  position: absolute;
+  top: 60px;
+  left: 40%;
+  z-index: 99999;
+  box-shadow: 0px 0px 20px #999;
+  /* CSS3 */
+  -moz-box-shadow: 0px 0px 20px #999;
+  /* Firefox */
+  -webkit-box-shadow: 0px 0px 20px #999;
+  /* Safari, Chrome */
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px;
+  /* Firefox */
+  -webkit-border-radius: 3px;
+  /* Safari, Chrome */;
+  
+  @media only screen and (max-width: 767px) {
+	left: 20%;
+  }
+  @media only screen and (max-width: 575px) {
+	left: 13%;
+  }
+  @media only screen and (max-width: 485px) {
+	left: 4%;
+  }
+  //@media only screen and (max-width: 350px) {
+	//left: 0%;
+}
+
+// Popup Header
+.popup-header {
+  font-size: 16px;
+  text-transform: uppercase;
+  background: #F4F4F2;
+  position: relative;
+  padding: 10px 20px;
+  border-bottom: 1px solid #DDD;
+  font-weight: bold;
+}
+
+.login-popup .popup-header span a:focus {
+  text-decoration: none !important;
+  color: #574689 !important;
+}
+
+.popup-header__login, .popup-header__signup {
+  color: #574689;
+  text-decoration: none;
+  position: relative;
+  left: 8px;
+}
+
+.popup-header__login:focus {
+  text-decoration: none;
+  color: #574689;
+}
+
+.popup-header__signup {
+  left: 24px;
+}
+
+
+
+.login-popup-header, signup-popup-header, .popup-header__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 16px;
+}
+
+// Popup Body
+.popup-body {
+  padding: 20px;
+}
+
+// Login User
+.login-user {
+  padding-left: 10px; 
+  //display: none;
+}
+
+.login-user label {
+  color: #777;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-user input[type="text"],
+.login-user input[type="email"],
+.login-user input[type="password"] {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #DDD;
+  color: #666;
+}
+
+
+.login-user input[type="checkbox"] {
+  position: relative;
+  left: 21px;
+  margin-right: 5px;
+}
+
+
+.login-user .checkbox {
+  margin-bottom: 10px;
+  clear: both;
+  overflow: hidden;
+}
+
+.social_box {
+  display: block;
+  clear: both;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.social_login .icon {
+  display: block;
+  width: 10px;
+  padding: 5px 18px;
+  margin-right: 10px;
+  float: left;
+  color: #FFF;
+  font-size: 16px;
+  text-align: center;
+}
+
+.social_login .fb .icon {
+  background: #3B5998;
+}
+
+.social_login .google .icon {
+  background: #DD4B39;
+}
+
+.social_login .icon_title {
+  margin-left: 10px;
+  display: block;
+  padding: 5px 0;
+  float: left;
+  font-weight: bold;
+  font-size: 16px;
+  color: #777;
+}
+
+.icon_title:hover {
+  text-decoration: none;
+  color: #eca351;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.fa-facebook, .fa-google-plus {
+  color: white;
+  position: relative;
+}
+
+.fa-facebook {
+  right: 5px;
+}
+
+.fa-google-plus {
+  right: 8px;
+}
+
+.forgot-password {
+  display: block;
+  margin: 20px 0 10px;
+  clear: both;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ED6347;
+}
+
+// Signup User 
+.signup-user {
+  padding-left: 10px;
+  display: none;
+}
+
+.signup-user label {
+  display: block;
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.signup-user input[type="text"],
+.signup-user input[type="email"],
+.signup-user input[type="password"] {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #DDD;
+  color: #666;
+}
+
+.signup-user input[type="checkbox"] {
+  position: relative;
+  left: 21px;
+  margin-right: 5px;
+}
+
+.signup-user .checkbox {
+  margin-bottom: 10px;
+  clear: both;
+  overflow: hidden;
+}
+
+//.login-user .group .check:checked + label .icon {
+//  background: #eca351;
+//}
+
+.checkbox-label {
+  color: #777;
+  position: relative;
+  bottom: 24px;
+  padding-left: 29px !important;
+  font-size: 15px !important;
+}

@@ -1,0 +1,129 @@
+// Hero Section
+.hero {
+  margin-bottom: 60px;
+  position: relative;
+  
+  @media screen and (min-width: 200px) {
+	height: 160px;
+  }
+  @media only screen and (min-width: 576px) {
+	height: 320px;
+  }
+  @media screen and (min-width: 768px) {
+	height: 432px;
+  }
+
+  &:before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-image: url(../../images/NOV_9052-2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	display: block;
+	z-index: -1;
+	
+	@media only screen and (max-width: 991px) {
+	  background-position: 40% !important;
+	}
+  }
+  &:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	background-image: url(../../images/hero.svg);
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 101%;
+	width: 100%;
+	display: block;
+	z-index: -1;
+  }
+}
+
+.hero__title {
+  color: $normal-white;
+  margin-top: 145px;
+
+  @media only screen and (max-width: 575px) {
+	margin-top: 180px !important;
+	font-size: 24px !important;
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+	margin-top: 335px !important;
+
+  }
+  @media screen and (max-width: 767px) {
+	font-size: 34px;
+	position: relative;
+	float: left;
+	color: $normal-red;
+	margin-top: 0px;
+  }
+}
+
+// alwaysPrepared Section
+.alwaysPrepared {
+  margin-top: 60px;
+  position: relative;
+
+  @media screen and (min-width: 200px) {
+	height: 160px;
+  }
+  @media only screen and (min-width: 576px) {
+	height: 320px;
+  }
+  @media screen and (min-width: 768px) {
+	height: 432px;
+  }
+
+  &:before {
+	content: '';
+	position: absolute;
+	left: -10px;
+	top: 18px;
+	background-image: url(../../images/H-4521.jpg);;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	display: block;
+	z-index: -1;
+	@media only screen and (min-width: 576px) {
+	  height: 50%px;
+	  background-position: 50%;
+	}
+  }
+  &:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	background-image: url(../../images/default-banner.svg);
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	display: block;
+	z-index: -1;
+  }
+}
+
+.alwaysPrepared__title {
+  color: $normal-red;
+  margin-top: 145px;
+  font-size: 3rem;
+
+  @media only screen and (max-width: 575px) {
+	margin-top: 180px !important;
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+	margin-top: 335px !important;
+  }
+}
+

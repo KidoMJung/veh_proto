@@ -13,10 +13,66 @@
 // use in your site stylesheets.
 
 @import "site/variables";
+/*
+
+@import 'scss/animated',
+'scss/bordered-pulled',
+'scss/core',
+'scss/fixed-width',
+'scss/icons',
+'scss/larger',
+'scss/list',
+'scss/mixins',
+'scss/path',
+'scss/rotated-flipped',
+'scss/screen-reader',
+'scss/stacked',
+'scss/variables';
+*/
 
 
 // Site Styles
 // ===========
 
 // Add your own site style includes here
-@import "site/layout";
+// 1. Abstracts
+@import 'abstracts/functions',
+'abstracts/mixins',
+'abstracts/placeholders',
+'abstracts/variables';
+
+// 2. Base
+@import 'base/base',
+'base/fonts',
+'base/helpers',
+'base/typography';
+
+// 3. Components
+@import 'components/button',
+'components/dcalendar.picker',
+'components/hero',
+'components/guarantee';
+
+// 4. Layout
+@import 'layout/footer',
+'layout/header';
+
+// 5. (specific) Pages
+@import 'pages/home',
+'pages/hypotheekadvies',
+'pages/login-popup';
+//'pages/login-modal';
+//'pages/login-popup';
+//'pages/login';
+//'pages/login_modal';
+
+// 6. Site
+@import 'site/layout',
+'site/variables',
+'site/navbar';
+
+// 6. Themes
+@import 'themes/default';
+
+// 7. Vendor
+@import 'vendor/normalize';
