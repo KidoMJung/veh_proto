@@ -13,6 +13,7 @@ var handlebars = require('express-handlebars');
 keystone.init({
 	'name': 'Eigen Huis Prototype',
 	'brand': 'Eigen Huis Prototype',
+	'port': 80,
 
 	'sass': 'public',
 	'static': 'public',
